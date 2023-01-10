@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Футбольный справочник</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(230, 236, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(201, 230, 255);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>350</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton {
+color: rgb(85, 85, 255);
+background: rgb(85,170, 255);
+border-radius: 25px;
+}
+
+#pushButton:hover {
+background: rgb(50, 110, 255);
+color: rgb(255, 255, 255);
+}
+#pushButton:pressed{
+background: rgb(100, 170, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Показать</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>421</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QHeaderView {
+	font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+background-color: #EEFFFF;
+font-size:13px;
+}
+QHeaderView::section:horizontal {
+color: #fff;
+border-style: solid;
+border-radius: 4px;
+background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #4287ff, stop: 1 #356ccc);
+}
+QTableView {
+border: 2px solid #3873d9;
+border-top-color: #4287ff;
+border-radius: 10px;
+background-color: #EEFFFF;
+gridline-color: #777;
+selection-background-color: #ccdfff;
+color:#333;
+font-size:14px;
+font-weight: bold;
+}
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>125</number>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="imageCover">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>60</y>
+      <width>251</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(233, 247, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>808</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuprogram">
+    <property name="title">
+     <string>Выход</string>
+    </property>
+    <addaction name="actionclose"/>
+   </widget>
+   <addaction name="menuprogram"/>
+  </widget>
+  <action name="actionclose">
+   <property name="text">
+    <string>close</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
